@@ -22,16 +22,11 @@
 
 ## 安装方法
 
-把 `gaiduo-ppt` 文件夹复制到 Codex 的 skills 目录下：
+在 Codex 中，直接让 Codex 通过 GitHub 链接安装这个 Skill：
 
-```bash
-cp -R gaiduo-ppt ~/.codex/skills/gaiduo-ppt
-```
-
-如果已经安装过旧版本，可以用：
-
-```bash
-rsync -a --delete gaiduo-ppt/ ~/.codex/skills/gaiduo-ppt/
+```text
+请安装这个 Skill：
+https://github.com/gaiduo/gaiduo-ppt
 ```
 
 安装后重启 Codex，或开启新的 Codex 会话，即可用 `$gaiduo-ppt` 调用。

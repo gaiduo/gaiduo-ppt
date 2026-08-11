@@ -17,16 +17,11 @@ It is designed for users who want more than a plain document-to-webpage conversi
 
 ## Installation
 
-Copy the `gaiduo-ppt` folder into your Codex skills directory:
+In Codex, ask Codex to install this skill directly from the GitHub repository:
 
-```bash
-cp -R gaiduo-ppt ~/.codex/skills/gaiduo-ppt
-```
-
-If you are updating an existing installation, use:
-
-```bash
-rsync -a --delete gaiduo-ppt/ ~/.codex/skills/gaiduo-ppt/
+```text
+Install this skill:
+https://github.com/gaiduo/gaiduo-ppt
 ```
 
 Restart Codex, or start a new Codex session, then invoke the skill with `$gaiduo-ppt`.
