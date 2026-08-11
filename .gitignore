@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Local editor files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+
+# Generated outputs
+outputs/
