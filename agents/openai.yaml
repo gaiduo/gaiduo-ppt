@@ -1,0 +1,4 @@
+interface:
+  display_name: "gaiduo-ppt"
+  short_description: "从文档到视觉稿再到高保真HTML版PPT"
+  default_prompt: "使用 $gaiduo-ppt 将我提供的文档制作成视觉精美、高保真还原的HTML版PPT。"
