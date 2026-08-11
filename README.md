@@ -1,5 +1,7 @@
 # gaiduo-ppt
 
+[中文](README.md) | [English](README_en.md)
+
 `gaiduo-ppt` 是一个用于 Codex 的自定义 Skill，目标是把用户提供的研究报告、商业分析、财报分析、行业报告、课程文档、Markdown / PDF / DOCX 等材料，制作成叙事清楚、视觉精美、高保真还原的 HTML 版 PPT。
 
 它适合这类场景：
@@ -17,6 +19,22 @@
 - 高保真混合还原：最终 HTML 不追求全部代码化，而是结合真实 HTML 文本、SVG / CSS 图表和局部图片模块。
 - 防止视觉退化：禁止把阶段三整页视觉稿直接作为 HTML 页面背景。
 - 细节保真：对小图标、虚线、引线、节点、飞轮、金字塔等细节建立专门检查机制。
+
+## 安装方法
+
+把 `gaiduo-ppt` 文件夹复制到 Codex 的 skills 目录下：
+
+```bash
+cp -R gaiduo-ppt ~/.codex/skills/gaiduo-ppt
+```
+
+如果已经安装过旧版本，可以用：
+
+```bash
+rsync -a --delete gaiduo-ppt/ ~/.codex/skills/gaiduo-ppt/
+```
+
+安装后重启 Codex，或开启新的 Codex 会话，即可用 `$gaiduo-ppt` 调用。
 
 ## 工作流程
 
@@ -183,22 +201,6 @@ outputs/<project-slug>/
     └── qa.md
 ```
 
-## 安装方式
-
-把 `gaiduo-ppt` 文件夹复制到 Codex 的 skills 目录下：
-
-```bash
-cp -R gaiduo-ppt ~/.codex/skills/gaiduo-ppt
-```
-
-如果已经安装过旧版本，可以用：
-
-```bash
-rsync -a --delete gaiduo-ppt/ ~/.codex/skills/gaiduo-ppt/
-```
-
-安装后重启 Codex，或开启新的 Codex 会话，即可用 `$gaiduo-ppt` 调用。
-
 ## 适合与不适合的场景
 
 适合：
@@ -225,4 +227,3 @@ rsync -a --delete gaiduo-ppt/ ~/.codex/skills/gaiduo-ppt/
 > 视觉效果优先，HTML 可编辑性第二；标题、正文、数字必须是真 HTML；复杂插画、产品图、地图、场景、纹理可以作为图片模块保真嵌入。
 
 也就是说，它不是把 PPT 全部转成纯代码图形，而是尽量在“高保真视觉效果”和“关键内容 HTML 化”之间取得平衡。
-
