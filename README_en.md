@@ -91,7 +91,7 @@ Stage 4 includes:
 - embedding complex illustrations, product images, maps, scenes, textures, or brand visuals as local image modules;
 - comparing browser screenshots against Stage 3 references;
 - fixing P0 / P1 / P2 issues;
-- testing navigation, page numbers, fullscreen mode, and scaling.
+- testing navigation, fullscreen mode, and scaling.
 
 Stage 4 must not:
 
